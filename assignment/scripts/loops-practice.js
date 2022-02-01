@@ -28,7 +28,7 @@ for (let i=3; i<6; i++) {
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
 for (let i=2; i<11; i=(i+2))
-//or i++,i++) both worked, but I'm not sure why or which is preferred
+//or i++,i++) both worked, but I'm not really sure why or which is preferred
 {
   console.log(i);
 }
@@ -54,9 +54,24 @@ console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
+let i = 0;
+while ( stars[i] ) {
+  console.log(stars[i]);
+  i++;
+}
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
+let z = 0;
+while ( z < 6 ) {
+  console.log(z);
+  z++;
+}
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+let c = 10;
+while ( c > 4) {
+  console.log(c);
+  c--;
+}
